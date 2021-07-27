@@ -45,19 +45,15 @@ if not os.path.isfile(mg_outputdir + "/Events/run_01/unweighted_events.lhe"):
 lhereader = register_module("LHEInput")
 lhereader.param("runNum", 0)
 lhereader.param("makeMaster", True)
-lhereader.param("expNum", 1002)  # phase 2
+lhereader.param("expNum", 1003)  # realistic phase 3
 lhereader.param(
     "inputFileList", [mg_outputdir + "/Events/run_01/unweighted_events.lhe"]
 )
 lhereader.param("useWeights", False)
 lhereader.param("nInitialParticles", 2)
 lhereader.param("nVirtualParticles", 0)
-lhereader.param(
-    "boost2Lab", True
-)  # generation is in centre of mass system (see steering card)
-lhereader.param(
-    "wrongSignPz", True
-)  # because Belle II convention is different to LEP etc
+lhereader.param("boost2Lab", True)  # generation is in centre of mass system (see steering card)
+lhereader.param("wrongSignPz", True)  # because Belle II convention is different to LEP etc
 print_params(lhereader)
 
 # open read in LHE madgraph events

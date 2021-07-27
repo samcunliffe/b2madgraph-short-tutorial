@@ -1,3 +1,6 @@
 *.root
 py.py
 run_card.dat
+widthfind
+decay
+.ipynb_checkpoints
