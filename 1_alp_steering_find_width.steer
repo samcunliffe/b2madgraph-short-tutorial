@@ -1,0 +1,22 @@
+import /cvmfs/belle.cern.ch/el7/releases/release-05-02-12/generators/madgraph/models/ALP_UFO 
+generate Sk > a a 
+output widthfind
+#output EE_ISR widthfind_wISR
+launch
+run_card.dat
+
+set MSk 1.0
+
+set ebeam1 10.58/2.
+set ebeam2 10.58/2. # centre of mass system @ Y(4S)
+set nevents 1000
+set iseed 11471
+
+set gZZ 0.0
+set gAZ 0.0
+set gWW 0.0
+set gAA 1.0e-4
+
+## ISR
+#set lpp1 -3
+#set lpp2 3
